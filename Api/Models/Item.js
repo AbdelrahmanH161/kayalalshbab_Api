@@ -23,7 +23,12 @@ const ItemSchema = new mongoose.Schema({
         },
     calories:{
         type: Number,
-        }
+        },
+    status:{
+        type: String,
+        required: true,
+        default:"active"
+    }
     },
     { versionKey: false}
 );
