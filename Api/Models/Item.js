@@ -11,7 +11,7 @@ const ItemSchema = new mongoose.Schema({
         required: true,
         },
     price: {
-        type: Number,
+        type: String,
         required: true,
         },
     image:{
@@ -20,14 +20,16 @@ const ItemSchema = new mongoose.Schema({
         },
     description: {
         type: String,
+        default:"",
         },
     calories:{
         type: Number,
+        default:"",
         },
     status:{
         type: String,
         required: true,
-        default:"active"
+        default:"active",
     }
     },
     { versionKey: false}
